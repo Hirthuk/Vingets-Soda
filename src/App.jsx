@@ -18,6 +18,7 @@ import ShopItem from './pages/ShopItem.jsx'
 import Login from './components/Login.jsx'
 import SignUp from './components/SignUp.jsx'
 import Profile from './pages/Profile.jsx'
+import Location from './pages/Location.jsx'
 const App = () => {
   return (
     <div className="px-2 sm:px-[2vw] md:px-[3vw] lg:px-[4vw]  mt-0">
@@ -27,8 +28,8 @@ const App = () => {
       <Routes>
         <Route path='/' element= {<Home/>}/>
         <Route path='about' element = {<About/>}/>
-        <Route path='cart' element = {<MyCart/>}/>
-        <Route path='items' element= {<AllItems/>}/>
+        <Route path='location' element = {<Location/>}/>
+        <Route path='collection' element= {<AllItems/>}/>
         <Route path='favourites' element= {<Favourites/>}/>
         <Route path='contact' element= {<Contact/>}/>
         <Route path='trending' element= {<Trending/>}/>

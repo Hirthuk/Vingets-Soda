@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const navLinks = [
     { to: '/', label: 'Home', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' },
-    { to: '/collection', label: 'Collection', icon: 'M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z' },
+    { to: '/collection', label: 'Products', icon: 'M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z' },
     { to: '/contact', label: 'Contact', icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
     { to: '/location', label: 'Location', icon: 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z' },
   ];
@@ -59,7 +59,7 @@ const NavBar = () => {
         <div className='flex items-center gap-4 z-20'>
           {/* Location Icon - Direct link to Madurai Google Maps */}
           <a 
-            href="https://www.google.com/maps/place/Kamatchi+Bike+Needs/@9.9240759,78.1099233,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00c5aa09cd718b:0x956cac7a1d7ef0f2!8m2!3d9.9240759!4d78.1147889!16s%2Fg%2F11w8sl0htm?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D" 
+            href="https://www.google.com/maps/place/10%C2%B014'45.9%22N+78%C2%B045'02.9%22E/@10.246092,78.750811,17z/data=!3m1!4b1!4m4!3m3!8m2!3d10.246092!4d78.750811?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" 
             target="_blank" 
             rel="noopener noreferrer nofollow"  // SEO: Prevent link juice loss
             className="p-2 hover:bg-blue-50 rounded-full transition-all"
@@ -77,7 +77,7 @@ const NavBar = () => {
 
           {/* Call Icon */}
           <a 
-            href="tel:+917092287132" 
+            href="tel:+919943011309" 
             className="flex items-center gap-2 p-2 hover:bg-blue-50 rounded-full transition-all"
             aria-label="Call us"  // Accessibility
           >
@@ -158,7 +158,7 @@ const NavBar = () => {
             {/* WhatsApp Button - Bottom */}
             <div className="mt-auto px-6 pt-6">
               <a 
-                href="https://wa.me/9345067994" 
+                href="https://wa.me/9943011309" 
                 target="_blank" 
                 rel="noopener noreferrer nofollow"
                 className="flex items-center justify-center gap-3 bg-green-500 text-white font-medium py-3 px-6 rounded-lg hover:bg-green-600 transition-colors"

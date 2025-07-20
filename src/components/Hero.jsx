@@ -53,30 +53,30 @@ const Hero = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="min-h-[85vh] md:min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-pink-50 relative overflow-hidden"
+      className="min-h-[85vh] md:min-h-screen bg-gradient-to-br from-red-50 via-yellow-50 to-white relative overflow-hidden"
     >
-      <section className="max-w-7xl mx-auto px-4 py-6 md:py-12 min-h-[85vh] md:min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center relative z-10 gap-8">
+      <section className="max-w-7xl mx-auto px-4 py-8 md:py-16 min-h-[85vh] md:min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between relative z-10 gap-8">
         {/* Left Content */}
         <motion.div 
-          className="w-full lg:w-1/2 space-y-4 md:space-y-6 text-center lg:text-left"
+          className="w-full lg:w-1/2 space-y-4 md:space-y-6 text-center lg:text-left flex flex-col justify-center md:justify-start md:pt-8"
           variants={itemVariants}
         >
           <motion.h1 
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 leading-tight tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-400">
-              Vingets Soda
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-yellow-400">
+              Vingets Soda Company
             </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl mt-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-pink-500">
-              Refreshment Delivered to you
+            <span className="block text-3xl sm:text-4xl md:text-5xl mt-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500">
+              Refreshment Delivered To You
             </span>
           </motion.h1>
 
           <motion.p 
-            className="text-base md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+            className="text-base md:text-xl text-red-600 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -93,7 +93,7 @@ const Hero = () => {
           >
             <NavLink to="/items" className="w-full sm:w-auto">
               <motion.button
-                className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-red-500 to-yellow-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -103,7 +103,7 @@ const Hero = () => {
             </NavLink>
             <NavLink to="/trending" className="w-full sm:w-auto">
               <motion.button 
-                className="w-full sm:w-auto bg-white text-orange-500 font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transform transition-all duration-300 ease-in-out border-2 border-orange-500 hover:bg-orange-50"
+                className="w-full sm:w-auto bg-white text-red-500 font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transform transition-all duration-300 ease-in-out border-2 border-yellow-500 hover:bg-yellow-50"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -115,7 +115,7 @@ const Hero = () => {
 
         {/* Right: Image Carousel */}
         <motion.div 
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 flex items-center justify-center"
           variants={itemVariants}
         >
           <div className="relative max-w-xl mx-auto">
@@ -131,12 +131,12 @@ const Hero = () => {
                 <motion.img
                   src={images[current].src}
                   alt={images[current].alt}
-                  className="w-full h-[280px] sm:h-[400px] object-cover"
+                  className="w-full h-[240px] sm:h-[340px] md:h-[400px] object-cover"
                   initial={{ scale: 1.1 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5 }}
                 />
-                <div className="absolute top-3 right-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm md:text-base font-semibold shadow-lg">
+                <div className="absolute top-3 right-3 bg-gradient-to-r from-red-500 to-yellow-500 text-white px-3 py-1 rounded-full text-sm md:text-base font-semibold shadow-lg">
                   {images[current].category}
                 </div>
               </motion.div>
@@ -149,7 +149,7 @@ const Hero = () => {
                   key={idx}
                   className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
                     current === idx 
-                      ? "bg-gradient-to-r from-orange-500 to-pink-500 scale-125" 
+                      ? "bg-gradient-to-r from-red-500 to-yellow-500 scale-125" 
                       : "bg-gray-300"
                   }`}
                   onClick={() => goTo(idx)}
