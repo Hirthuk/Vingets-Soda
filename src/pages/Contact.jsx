@@ -97,7 +97,7 @@ const Contact = () => {
               Visit us at Thirumayam for a fizzy experience or order online for doorstep refreshment!
             </p>
             <a
-              href="https://maps.app.goo.gl/vingetssoda"
+              href= "https://www.google.com/maps/place/10%C2%B014'45.9%22N+78%C2%B045'02.9%22E/@10.2460833,78.7508056,17z/data=!3m1!4b1!4m4!3m3!8m2!3d10.2460833!4d78.7508056?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-6 px-6 py-3 bg-red-500 hover:bg-yellow-500 text-white font-medium rounded-lg shadow-md transition-colors duration-300"
